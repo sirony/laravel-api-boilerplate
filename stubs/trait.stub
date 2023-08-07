@@ -1,0 +1,10 @@
+<?php
+
+namespace {{ namespace }};
+
+trait {{trait_name}}
+{
+    /**
+    * Create regular or static methods here
+    */
+}
