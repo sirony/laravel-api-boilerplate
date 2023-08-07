@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->text('details');
+            $table->string('client');
+            $table->boolean('is_fulfilled')->default(false);
             $table->timestamps();
         });
     }

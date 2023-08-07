@@ -1,0 +1,4 @@
+### Repository Pattern
+Before we create a repository for any model ``(For example Order)``, we need to define an interface to specify all the methods which the repository must declare. Instead of relying on the repository class, our controller (and any order component we may build in the future) will depend on the interface.
+
+This makes our code flexible because, should it become necessary to make a change in the future, the controller remains unaffected, For instance, if we decide to outsource order management to a 3rd party application, we can build a new model that conforms to ``OrderRepositoryInterface``'s signature and swap the binding declarations and our controller will work exactly as expected - without touching a single line of code in the controller.
