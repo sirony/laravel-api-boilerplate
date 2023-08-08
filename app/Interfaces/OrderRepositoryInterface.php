@@ -2,6 +2,8 @@
 
 namespace App\Interfaces;
 
+//https://www.twilio.com/blog/repository-pattern-in-laravel-application
+
 interface OrderRepositoryInterface
 {
     public function getAllOrders();
